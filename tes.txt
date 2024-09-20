@@ -1,0 +1,74 @@
+=============================================
+Operator Aritmatik: Operasi matematika dasar.
+=============================================
+
+Contoh: +, -, *, /, %
+Contoh penggunaan: a + b
+Operator Pembanding: Membandingkan dua nilai, hasilnya true atau false.
+
+Contoh: ==, !=, >, <, >=, <=
+Contoh penggunaan: a == b
+Operator Logika: Menggabungkan ekspresi logika.
+
+Contoh: && (AND), || (OR), ! (NOT)
+Contoh penggunaan: (a > b) && (b < c)
+
+=================================================
+IF ,ELSE : Memilih blok kode berdasarkan kondisi.
+=================================================
+
+Contoh :
+-----------
+
+if (contoh == "contoh") {
+    cout << "contoh";
+}   else {
+    cout << "error";
+}
+
+==============================================================
+SWITCH: Memilih salah satu dari banyak opsi berdasarkan nilai.
+==============================================================
+
+contoh :
+------------
+
+switch (x) {
+    case 1:
+        break;
+    case 2:
+        break;
+    default:
+}
+
+======================
+Struktur Pengulangan
+======================
+
+FOR: Perulangan dengan jumlah iterasi tertentu.
+contoh :
+--------------
+
+for (int i = 0; i < 10; i++) {
+    // aksi
+}
+
+WHILE: Perulangan berdasarkan kondisi.
+contoh :
+---------------
+
+while (a < b) {
+    // aksi
+}
+
+DO WHILE: Mirip while, tapi minimal dieksekusi sekali.
+contoh :
+--------------
+
+do {
+    // aksi
+} while (a < b);
+
+
+
+
