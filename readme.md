@@ -13,5 +13,7 @@ Adalah sebuah program untuk menerima input 5 angka dari pengguna, menampilkan an
 ### nestruk.cpp
 Adalah sebuah program untuk mengelola data mahasiswa, termasuk nama, NIM, nilai tugas, dan nilai ujian. Program ini juga menghitung nilai akhir berdasarkan bobot tugas (40%) dan ujian (60%) serta menampilkan data lengkap mahasiswa beserta nilai akhir mereka.
 
+---
+
 ### tebak_kota.cpp
 Adalah sebuah program permainan menebak nama kota sesuai clue yang diinginkan.
