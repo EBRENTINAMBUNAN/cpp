@@ -22,3 +22,8 @@ Adalah sebuah program permainan menebak nama kota sesuai clue yang diinginkan.
 
 ### cek_khodam.cpp
 Adalah sebuah program mengecek khodam yang ada pada nama anda.
+
+---
+
+### cv_dosa.cpp
+Adalah sebuah program untuk menukar dosa menjadi saldo dana, jadi jika anda punya dosa segera tukar menjadi saldo dana :).
