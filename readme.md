@@ -16,7 +16,7 @@ Adalah sebuah program untuk mengelola data mahasiswa, termasuk nama, NIM, nilai 
 ---
 
 ### tebak_kota.cpp
-Adalah sebuah program permainan menebak nama kota sesuai clue yang diinginkan.
+Adalah sebuah program permainan menebak nama kota sesuai clue yang diberikan.
 
 ---
 
