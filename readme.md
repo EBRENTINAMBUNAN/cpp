@@ -27,3 +27,9 @@ Adalah sebuah program mengecek khodam yang ada pada nama anda.
 
 ### cv_dosa.cpp
 Adalah sebuah program untuk menukar dosa menjadi saldo dana, jadi jika anda punya dosa segera tukar menjadi saldo dana :).
+
+
+---
+
+### cv_suhu.cpp
+Adalah sebuah program untuk convert suhu.
