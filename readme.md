@@ -32,4 +32,8 @@ Adalah sebuah program untuk menukar dosa menjadi saldo dana, jadi jika anda puny
 ---
 
 ### cv_suhu.cpp
-Adalah sebuah program untuk convert suhu.
+Adalah sebuah program untuk convert suhu. 
+Celcius 
+Reamur
+Fahrenheit
+Kelvin
