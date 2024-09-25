@@ -70,5 +70,57 @@ do {
 } while (a < b);
 
 
+==========================
+Sintaks Dasar Program C++
+==========================
 
+1. #include  
+   Menyertakan pustaka. Contoh: `#include <iostream>` untuk input/output.
 
+2. using namespace std;
+   Menggunakan ruang lingkup standar untuk menghindari konflik nama.
+
+3. main()  
+   Fungsi utama tempat eksekusi program dimulai. Contoh:
+   ```cpp
+   int main() { return 0; }
+   ```
+
+4. Variabel dan Tipe Data  
+   Menyimpan data dengan tipe seperti `int`, `float`, `char`, `string`.  
+   Contoh: `int angka = 10;`
+
+5. Operator
+   Operasi pada variabel. Contoh: `+`, `-`, `==`, `&&`.
+
+6. Kondisi  
+   Pengambilan keputusan menggunakan `if`, `else`, atau `switch`.  
+   Contoh:  
+   ```cpp
+   if (a > b) { /* aksi */ }
+   ```
+
+7. Perulangan  
+   Mengulang kode dengan `for`, `while`, atau `do-while`.  
+   Contoh:  
+   ```cpp
+   for (int i = 0; i < 10; i++) { /* aksi */ }
+   ```
+
+8. Fungsi  
+   Blok kode yang bisa dipanggil berulang kali.  
+   Contoh:  
+   ```cpp
+   void tampil() { /* aksi */ }
+   ```
+
+9. Array  
+   Kumpulan data bertipe sama.  
+   Contoh: `int arr[5] = {1, 2, 3, 4, 5};`
+
+10. Struct  
+    Pengelompokan beberapa tipe data.  
+    Contoh:  
+    ```cpp
+    struct Mahasiswa { string nama; int umur; };
+    ```
