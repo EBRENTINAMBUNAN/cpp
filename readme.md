@@ -37,3 +37,13 @@ Celcius
 Reamur
 Fahrenheit
 Kelvin
+
+
+---
+
+### cv_uang.cpp
+Adalah sebuah program untuk convert mata uang. 
+Rupiah Indonesia
+Dollar US
+Yen Jepang
+Yuan China
