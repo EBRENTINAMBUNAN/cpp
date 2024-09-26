@@ -1,41 +1,49 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main()
 {
-    int angka[5];
+    int angka[10];
 
-    cout << "Masukkan 5 angka:" << endl;
-    for (int i = 0; i < 5; i++)
+    cout << "========================================" << endl;
+    cout << "  Selamat Datang di Program Pencari Nilai" << endl;
+    cout << "    Maksimum dan Minimum dari 10 Angka!" << endl;
+    cout << "          by Ebren Tinambunan          " << endl;
+    cout << "========================================" << endl;
+
+    cout << "\nMasukkan 10 angka:" << endl;
+    for (int i = 0; i < 10; i++)
     {
         cout << "Angka ke-" << i + 1 << ": ";
         cin >> angka[i];
     }
 
-    cout << "\nIsi array:" << endl;
-    for (int i = 0; i < 5; i++)
-    {
-        cout << "Angka pada indeks " << i << ": " << angka[i] << endl;
-    }
+    int max = angka[0];
+    int min = angka[0];
 
-    int jumlah = 0;
-    for (int i = 0; i < 5; i++)
+    for (int i = 1; i < 10; i++)
     {
-        jumlah += angka[i];
-    }
-
-    cout << "\nJumlah seluruh elemen array: " << jumlah << endl;
-
-    int maksimum = angka[0];
-    for (int i = 1; i < 5; i++)
-    {
-        if (angka[i] > maksimum)
+        if (angka[i] > max)
         {
-            maksimum = angka[i];
+            max = angka[i];
+        }
+        if (angka[i] < min)
+        {
+            min = angka[i];
         }
     }
 
-    cout << "Nilai maksimum dalam array: " << maksimum << endl;
+    cout << "\n========================================" << endl;
+    cout << "            Hasil Analisis               " << endl;
+    cout << "========================================" << endl;
+
+    cout << "Nilai maksimum dalam array: " << setw(10) << max << endl;
+    cout << "Nilai minimum dalam array:  " << setw(10) << min << endl;
+    cout << "========================================" << endl;
+
+    cout << "\nTerima kasih telah menggunakan program ini!" << endl;
+    cout << "========================================" << endl;
 
     return 0;
 }

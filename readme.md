@@ -6,7 +6,16 @@ Adalah sebuah program untuk melihat detail kota sesuai kota yang diinputkan.
 ---
 
 ### p2.cpp
-Adalah sebuah program untuk menerima input 5 angka dari pengguna, menampilkan angka-angka yang dimasukkan, menghitung dan menampilkan jumlah totalnya, serta menemukan dan menampilkan nilai maksimum dari angka-angka tersebut.
+Adalah sebuah program yang meminta pengguna untuk memasukkan 10 angka.
+<br>
+serta menampilkan nilai maksimum dan minimum
+
+
+---
+
+### p2_1.cpp
+Adalah sebuah program yang menjumlahkan 2 array yang di inputkan pengguna dengan masing masing 5 angka.
+
 
 ---
 
