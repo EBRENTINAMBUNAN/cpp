@@ -108,7 +108,9 @@ public:
         if (newCapacity <= capacity)
         {
             cout << "\033[1;31m"
-                 << "Ukuran baru harus lebih besar dari kapasitas saat ini.\033[0m\n";
+                 << "Result : Error \n";
+            cout << "Msg    : Ukuran baru harus lebih besar dari kapasitas saat ini.\n";
+            cout << "===================================================================\033[0m\n";
             return;
         }
 
@@ -211,7 +213,7 @@ bool confirmContinue()
 
 int main()
 {
-    int ukuran, pilihan, nilai, kapasitasBaru;
+    int ukuran, pilihan, kapasitasBaru, nilai;
     bool lanjut = true;
 
     showHeader();

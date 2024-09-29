@@ -19,6 +19,15 @@ Adalah sebuah program yang menjumlahkan 2 array yang di inputkan pengguna dengan
 
 ---
 
+
+---
+
+### p4.cpp
+Adalah sebuah program menerapkan stack pada array dengan Class.
+
+
+---
+
 ### nestruk.cpp
 Adalah sebuah program untuk mengelola data mahasiswa, termasuk nama, NIM, nilai tugas, dan nilai ujian. Program ini juga menghitung nilai akhir berdasarkan bobot tugas (40%) dan ujian (60%) serta menampilkan data lengkap mahasiswa beserta nilai akhir mereka.
 
