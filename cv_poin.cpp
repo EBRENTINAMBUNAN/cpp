@@ -6,58 +6,70 @@
 
 using namespace std;
 
-void showHeader()
+void hackerEffect(const string &message, int delay)
 {
-    cout << "\033[1;36m";
-    cout << "====================================================\n";
-    cout << setw(45) << "PROGRAM CONVERT POIN IMPHNEN MENJADI SALDO DANA\n";
-    cout << setw(36) << "BY EBREN TINAMBUNAN\n";
-    cout << "====================================================\n";
-    cout << "\033[0m";
+    for (char c : message)
+    {
+        cout << c;
+        cout.flush();
+        this_thread::sleep_for(chrono::milliseconds(delay));
+    }
+}
+
+void showHackerHeader()
+{
+    hackerEffect("\033[1;32m", 0);
+    hackerEffect("======================================================\n", 10);
+    hackerEffect("||       PROGRAM CONVERT POIN GRUP MENJADI SALDO DANA ||\n", 10);
+    hackerEffect("||              Ingin Menjadi Programmer Handal       ||\n", 10);
+    hackerEffect("||                   namun Enggan Ngoding             ||\n", 10);
+    hackerEffect("||                   by EBREN TINAMBUNAN              ||\n", 10);
+    hackerEffect("======================================================\n\n", 10);
+    hackerEffect("\033[0m", 0);
 }
 
 int randomPoin()
 {
     srand(static_cast<unsigned>(time(0)));
-    return rand() % 4501 + 500;
+    return rand() % 4501 + 500; //
 }
 
-void loadingAnimation(const string &message, int duration)
+void hackerLoading(const string &message, int delay)
 {
-    cout << message;
-    for (int i = 0; i < 3; ++i)
+    hackerEffect(message, 20);
+    for (int i = 0; i < 5; ++i)
     {
         cout << ".";
         cout.flush();
-        this_thread::sleep_for(chrono::milliseconds(duration));
+        this_thread::sleep_for(chrono::milliseconds(delay));
     }
     cout << endl;
 }
 
-void progressBar(int duration)
+void hackerProgressBar(int duration)
 {
-    int barWidth = 50;
+    int barWidth = 40;
     cout << "\033[1;32m[";
     for (int i = 0; i < barWidth; ++i)
     {
-        cout << "-";
+        cout << "#";
         cout.flush();
         this_thread::sleep_for(chrono::milliseconds(duration / barWidth));
     }
     cout << "]\033[0m" << endl;
 }
 
-void convertEffect(int poin)
+void hackerConvertEffect(int poin)
 {
-    cout << "\033[1;34mProses konversi poin menjadi saldo Dana sedang berlangsung...\033[0m\n";
-    loadingAnimation("Memverifikasi poin", 500);
-    loadingAnimation("Memproses konversi", 500);
-    loadingAnimation("Mengirim saldo ke akun Dana", 500);
+    hackerLoading("Verifying FB group points", 100);
+    hackerLoading("Processing conversion", 100);
+    hackerLoading("Transmitting to Dana account", 100);
 
-    cout << "\033[1;32m";
-    progressBar(2000);
+    hackerEffect("\033[1;32m", 0);
+    hackerProgressBar(1500);
 
-    cout << "Konversi berhasil! Anda telah menukar " << poin << " poin menjadi saldo Dana.\033[0m\n";
+    hackerEffect(">>> Conversion SUCCESSFUL: ", 30);
+    cout << poin << " FB group points converted to Dana balance.\033[0m\n";
 }
 
 int main()
@@ -68,20 +80,23 @@ int main()
     long long nomorDana;
     bool validDana = false;
 
-    showHeader();
+    showHackerHeader();
 
-    cout << "\033[1;37mMasukkan nama Anda: \033[0m";
+    hackerEffect(">>> Enter your Facebook username: ", 30);
     getline(cin, username);
 
-    cout << "\033[1;33mSisa poin kamu adalah " << poin << " poin\033[0m\n";
-    cout << "\033[1;37mApakah mau di-convert ke Dana? (y/n): \033[0m";
+    hackerEffect("\n>>> Retrieving your FB group points...\n", 30);
+    this_thread::sleep_for(chrono::milliseconds(1000));
+    hackerEffect("\033[1;32m>>> " + to_string(poin) + " points available in 'Ingin Menjadi Programmer Handal Namun Enggan Ngoding' group.\033[0m\n", 30);
+
+    hackerEffect("\n>>> Convert points to Dana balance? (y/n): ", 30);
     cin >> pilihan;
 
     if (pilihan == 'y' || pilihan == 'Y')
     {
         while (!validDana)
         {
-            cout << "\033[1;37mMasukkan nomor Dana kamu (10-13 digit): \033[0m";
+            hackerEffect(">>> Enter your Dana account number (10-13 digits): ", 30);
             cin >> nomorDana;
             if (to_string(nomorDana).length() >= 10 && to_string(nomorDana).length() <= 13)
             {
@@ -89,17 +104,17 @@ int main()
             }
             else
             {
-                cout << "\033[1;31mNomor Dana tidak valid. Silakan coba lagi.\033[0m\n";
+                hackerEffect("\033[1;31mERROR: Invalid Dana number. Try again.\033[0m\n", 30);
             }
         }
 
-        convertEffect(poin);
+        hackerConvertEffect(poin);
 
-        cout << "\033[1;32mSelamat " << username << "! Dana kamu telah berhasil dikirim.\033[0m\n";
+        hackerEffect("\033[1;32m>>> Transaction COMPLETE: Dana balance has been updated.\033[0m\n", 30);
     }
     else
     {
-        cout << "\033[1;33mProgram telah berakhir, terima kasih!\033[0m\n";
+        hackerEffect("\033[1;31m>>> Operation CANCELED. Exiting program...\033[0m\n", 30);
     }
 
     return 0;
