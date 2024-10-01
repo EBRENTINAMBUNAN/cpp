@@ -28,6 +28,15 @@ Adalah sebuah program menerapkan stack pada array dengan Class.
 
 ---
 
+
+---
+
+### p5.cpp
+Adalah sebuah program Program Pencari Nilai indeks dari angka yang dimasukan.
+
+
+---
+
 ### nestruk.cpp
 Adalah sebuah program untuk mengelola data mahasiswa, termasuk nama, NIM, nilai tugas, dan nilai ujian. Program ini juga menghitung nilai akhir berdasarkan bobot tugas (40%) dan ujian (60%) serta menampilkan data lengkap mahasiswa beserta nilai akhir mereka.
 
