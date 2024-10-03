@@ -10,8 +10,8 @@ int main()
     bool found = false;
 
     cout << "========================================" << endl;
-    cout << "  Selamat Datang di Program Pencari Nilai" << endl;
-    cout << "    Maksimum dan Minimum dari 5 Angka!" << endl;
+    cout << "      Selamat Datang di Program         " << endl;
+    cout << "          Menggunakan array             " << endl;
     cout << "          by Ebren Tinambunan          " << endl;
     cout << "========================================" << endl;
 
