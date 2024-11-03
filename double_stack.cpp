@@ -17,8 +17,8 @@ public:
     {
         arr = new int[amount];
         capacity = amount;
-        top1 = -1;     // Stack1 starts from the beginning
-        top2 = amount; // Stack2 starts from the end
+        top1 = -1;
+        top2 = amount;
     }
 
     ~Stack()
